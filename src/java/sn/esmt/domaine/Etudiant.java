@@ -45,6 +45,14 @@ public class Etudiant {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
+
+        public Ecole getEcole() {
+            return ecole;
+        }
+
+        public void setEcole(Ecole ecole) {
+            this.ecole = ecole;
+        }
 	
 	
 }

@@ -12,7 +12,7 @@ import sn.esmt.domaine.Etudiant;
 
 public class EtudiantDaoImpl  implements IEtudiantDao{
 
-	//Ouverture d'une entité de travail JPA
+	//Ouverture d'une entitï¿½ de travail JPA
 	private EntityManagerFactory emf = Persistence.createEntityManagerFactory("my-persistence");;
 	private EntityManager em = emf.createEntityManager();
 	private EntityTransaction tx = em.getTransaction();
@@ -61,7 +61,8 @@ public class EtudiantDaoImpl  implements IEtudiantDao{
 	@Override
 	public List<Etudiant> listeEtudiant() {
 		tx.begin();
-		Query query = em.createQuery("SELECT * FROM etudiant");
+		Query query = em.createQuery("FROM Etudiant");
+                //return (User) em.createQuery("FROM User u WHERE  u.email = :email").setParameter(email, "Not Found");
 		List<Etudiant> etu = (List<Etudiant>)query.getResultList();
 		tx.commit();
 		em.close();

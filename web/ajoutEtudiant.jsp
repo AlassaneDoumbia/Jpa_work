@@ -18,12 +18,7 @@
             </div>
 
             <div class="row wow fadeInUp">
-              <c:forEach items="${listeEtudiant}" var="liste">
-                    <tr>
-                         <td>${liste.nom}</td> <!-- player not Player -->
-                         <td>${liste.prenom}</td>  <!-- player not Player -->
-                    </tr>
-               </c:forEach>
+              
               <div class="col-lg-12">
                 <div class="form">
                   <div id="sendmessage">L'etudiant a été bien enregistre. Merci!</div>
@@ -40,6 +35,15 @@
                         <div class="validation"></div>
                       </div>
                     </div>
+                    <div class="form-row">
+                      <div class="form-group col-lg-6">
+                        <select class="form-control" name="ecole">
+                            <c:forEach items="${listeEcole}" var="liste">
+                                <option value="${liste.id}">${liste.nom}</option>
+                           </c:forEach>
+                        </select>
+                      </div>
+                    </div>
                     
                     
                     <div class="text-center"><button type="submit" title="Send Message">Enregistrer</button></div>
@@ -52,7 +56,7 @@
           </div>
         </section><!-- #contact -->
         </main>
-        <a href="<c:url value="#" />" ><i class="fa fa-chevron-left"></i></a>
+        <a href="<c:url value="index.jsp" />" ><i class="fa fa-chevron-left"></i></a>
         <c:import url="ressources/templates/footer.jsp" />
     </body>
 </html>

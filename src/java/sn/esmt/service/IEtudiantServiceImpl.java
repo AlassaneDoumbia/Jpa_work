@@ -15,7 +15,7 @@ public class IEtudiantServiceImpl implements IEtudiantService{
 	}
 	@Override
 	public void addEtudiant(Etudiant e) {
-		ied.addEtudiant(e);
+            ied.addEtudiant(e);
 		
 	}
 

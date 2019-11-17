@@ -17,7 +17,7 @@
                 <p>Ajouter un Etudiant</p>
                 <div>
                   <a href="<c:url value="ressources/img/portfolio/web3.jpg" />" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="<c:url value="ajoutEtudiant.jsp" />" class="link-details" title="Aller au formulaire"><i class="ion ion-android-open"></i></a>
+                  <a href="<%=request.getContextPath()%>/Ajouter" class="link-details" title="Aller au formulaire"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
             </div>
@@ -30,7 +30,7 @@
                 <p>Liste des Etudiants</p>
                 <div>
                   <a href="<c:url value="ressources/img/portfolio/web3.jpg" />" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="<c:url value="listeEtudiant.jsp" />" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="<%=request.getContextPath()%>/ModifierEtudiant" class="link-details" title="Voir liste des etudiants"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
             </div>
